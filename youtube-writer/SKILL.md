@@ -1,6 +1,7 @@
 ---
 name: youtube-writer
-description: Encapsule toutes les actions d'écriture YouTube : poster une réponse, liker un commentaire, épingler, signaler, supprimer. Centralise les logs et le rate‑limiting pour respecter les quotas (écritures = 50 unités). Utiliser quand l'utilisateur demande à interagir avec YouTube : "réponds à ce commentaire", "like cette vidéo", "signale ce contenu", "supprime mon commentaire", "épingle ce commentaire". Ce skill est la sortie du pipeline de traitement des commentaires.
+description: >
+  Encapsule toutes les actions d'écriture YouTube : poster une réponse, liker un commentaire, épingler, signaler, supprimer. Centralise les logs et le rate‑limiting pour respecter les quotas (écritures = 50 unités). Utiliser quand l'utilisateur demande à interagir avec YouTube : "réponds à ce commentaire", "like cette vidéo", "signale ce contenu", "supprime mon commentaire", "épingle ce commentaire". Ce skill est la sortie du pipeline de traitement des commentaires.
 ---
 
 # YouTube Writer Skill
