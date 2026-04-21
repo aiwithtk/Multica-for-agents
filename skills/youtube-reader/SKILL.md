@@ -1,6 +1,7 @@
 ---
 name: youtube-reader
-description: Lecture de données YouTube : récupère les nouveaux commentaires (triés par date), les statistiques vidéo (vues, likes, commentaires), les mentions (@username) et les réponses en attente. Utilise l'API YouTube Data v3 via Composio. Utiliser quand l'utilisateur demande : "récupère les commentaires de cette vidéo", "donne-moi les stats", "listes les mentions", "quels commentaires n'ont pas de réponse ?", "analyse les interactions YouTube". Ce skill est l'entrée du pipeline de traitement des commentaires YouTube.
+description: |
+  Lecture de données YouTube : récupère les nouveaux commentaires (triés par date), les statistiques vidéo (vues, likes, commentaires), les mentions (@username) et les réponses en attente. Utilise l'API YouTube Data v3 via Composio. Utiliser quand l'utilisateur demande : "récupère les commentaires de cette vidéo", "donne-moi les stats", "listes les mentions", "quels commentaires n'ont pas de réponse ?", "analyse les interactions YouTube". Ce skill est l'entrée du pipeline de traitement des commentaires YouTube.
 ---
 
 # YouTube Reader Skill

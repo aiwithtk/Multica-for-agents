@@ -1,6 +1,7 @@
 ---
 name: youtube-writer
-description: Interaction avec YouTube : poster des réponses, liker des vidéos, modérer les commentaires (approuver, rejeter, bannir), supprimer des commentaires et signaler des abus. Utilise l'API YouTube Data v3 via Composio. Utiliser quand l'utilisateur demande : "réponds à ce commentaire", "like cette vidéo", "vire ce troll", "approuve les messages", "supprime mon commentaire", "signale cette vidéo". Ce skill gère les actions d'écriture et de modération.
+description: |
+  Encapsule toutes les actions d'écriture YouTube : poster une réponse, liker un commentaire, épingler, signaler, supprimer. Centralise les logs et le rate‑limiting pour respecter les quotas (écritures = 50 unités). Utiliser quand l'utilisateur demande à interagir avec YouTube : "réponds à ce commentaire", "like cette vidéo", "signale ce contenu", "supprime mon commentaire", "épingle ce commentaire". Ce skill est la sortie du pipeline de traitement des commentaires.
 ---
 
 # YouTube Writer Skill
