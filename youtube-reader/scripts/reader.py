@@ -1,7 +1,11 @@
 import argparse
 import json
 import os
+from dotenv import load_dotenv
 from datetime import datetime, timedelta
+
+# Charger les variables d'environnement depuis le fichier .env
+load_dotenv()
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
@@ -173,8 +177,8 @@ class YouTubeConversationReader:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="YouTube Reader Execution Script")
-    parser.add_argument("--api_key", required=True, help="YouTube Data API v3 Key")
-    parser.add_argument("--channel_id", required=True, help="Your Channel ID to identify 'ME'")
+    parser.add_argument("--api_key", default=os.getenv("YOUTUBE_API_KEY"), required=not bool(os.getenv("YOUTUBE_API_KEY")), help="YouTube Data API v3 Key")
+    parser.add_argument("--channel_id", default=os.getenv("YOUTUBE_CHANNEL_ID"), required=not bool(os.getenv("YOUTUBE_CHANNEL_ID")), help="Your Channel ID to identify 'ME'")
     parser.add_argument("--video_id", required=True, help="Video ID to analyze")
     
     args = parser.parse_args()
